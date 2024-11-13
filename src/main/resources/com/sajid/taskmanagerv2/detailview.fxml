@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sajid.taskmanagerv2.controller.DetailView">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2b32" height="600.0" stroke="#2b2b32" strokeType="INSIDE" width="240.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#202128" height="600.0" layoutX="240.0" stroke="#202128" strokeType="INSIDE" width="560.0" />
+      <ImageView fitHeight="268.0" fitWidth="280.0" layoutX="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="26.0" layoutY="225.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="display_name" layoutX="26.0" layoutY="283.0" prefHeight="34.0" prefWidth="206.0" text="name" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="display_id" layoutX="26.0" layoutY="317.0" prefHeight="34.0" prefWidth="206.0" text="Id" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="display_rank" layoutX="26.0" layoutY="351.0" prefHeight="34.0" prefWidth="206.0" text="rank" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="76.0" layoutY="522.0" mnemonicParsing="false" onAction="#onLogout" prefHeight="27.0" prefWidth="88.0" style="-fx-background-color: #1e5cf7;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="676.0" layoutY="32.0" mnemonicParsing="false" onAction="#onBack" prefHeight="27.0" prefWidth="88.0" style="-fx-background-color: #1e5cf7;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="297.0" layoutY="158.0" prefHeight="34.0" prefWidth="49.0" text="Title:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="208.0" prefHeight="34.0" prefWidth="120.0" text="Description:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="418.0" prefHeight="34.0" prefWidth="88.0" text="Due Date:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="461.0" prefHeight="34.0" prefWidth="120.0" text="Assigned By:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="title_label" layoutX="356.0" layoutY="158.0" prefHeight="34.0" prefWidth="274.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="date_label" layoutX="391.0" layoutY="418.0" prefHeight="34.0" prefWidth="288.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="assignedBy_label" layoutX="417.0" layoutY="461.0" prefHeight="34.0" prefWidth="288.0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2b32" height="131.0" layoutX="298.0" layoutY="269.0" stroke="#2b2b32" strokeType="INSIDE" width="444.0" />
+      <VBox layoutX="296.0" layoutY="268.0" prefHeight="131.0" prefWidth="444.0">
+         <children>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" stylesheets="@scrollPane.css">
+               <content>
+                  <VBox fx:id="detail_box" prefHeight="130.0" prefWidth="411.0">
+                     <children>
+                        <Text fx:id="detail_text" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="394.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

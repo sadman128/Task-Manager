@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sajid.taskmanagerv2.controller.NewNotice">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2b2b32" height="600.0" stroke="#2b2b32" strokeType="INSIDE" width="240.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#202128" height="600.0" layoutX="240.0" stroke="#202128" strokeType="INSIDE" width="560.0" />
+      <ImageView fitHeight="268.0" fitWidth="280.0" layoutX="-14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="26.0" layoutY="225.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="174.0" prefHeight="28.0" prefWidth="173.0" text="Title of the Notice:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="title_field" layoutX="383.0" layoutY="217.0" prefHeight="30.0" prefWidth="268.0" promptText="Title" />
+      <Label layoutX="383.0" layoutY="253.0" prefHeight="30.0" prefWidth="192.0" text="Details of the Notice" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="detail_field" layoutX="383.0" layoutY="292.0" prefHeight="121.0" prefWidth="268.0" promptText="Details" style="-fx-background-color: #2b2b32;" />
+      <Button layoutX="469.0" layoutY="452.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="34.0" prefWidth="97.0" style="-fx-background-color: #1e5cf7;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="76.0" layoutY="519.0" mnemonicParsing="false" onAction="#onLogout" prefHeight="27.0" prefWidth="88.0" style="-fx-background-color: #1e5cf7;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="display_name" layoutX="26.0" layoutY="284.0" prefHeight="34.0" prefWidth="206.0" text="name" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="display_id" layoutX="26.0" layoutY="318.0" prefHeight="34.0" prefWidth="206.0" text="Id" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="display_rank" layoutX="26.0" layoutY="352.0" prefHeight="34.0" prefWidth="206.0" text="rank" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="676.0" layoutY="32.0" mnemonicParsing="false" onAction="#onBack" prefHeight="27.0" prefWidth="88.0" style="-fx-background-color: #1e5cf7;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
