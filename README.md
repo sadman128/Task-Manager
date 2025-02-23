@@ -1,5 +1,5 @@
 # this is a project for my university.
-## i will add details later
+## Task manager is a application for a particular corporate scenario were supervisor can assign task to users and user can view them using the app and mark then id its done
 ![image](https://github.com/user-attachments/assets/310c162b-9ca0-4b66-b498-a09de2c9be3b)
 ![image](https://github.com/user-attachments/assets/df0bc391-8423-4956-83a6-854770ac3489)
 ![image](https://github.com/user-attachments/assets/81680793-e2fe-4655-b84a-3bff8cb20e02)
